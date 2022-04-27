@@ -1,19 +1,40 @@
-const accordionBtns = document.querySelectorAll(".accordion");
+const accordion = document.querySelector('[data-js="accordion"]')
 
-accordionBtns.forEach((accordion) => {
-  accordion.onclick = function () {
-    this.classList.toggle("is-open");
+accordion.addEventListener('click', e => {
+  const accordionItemToBeOpened = document.querySelector('[data-accordion-body="1"]')
+  accordionItemToBeOpened.classList.toggle('active')
+})
 
-    let content = this.nextElementSibling;
-    console.log(content);
+const vermais = document.querySelector('[data-accordion-header="1"]')
 
-    if (content.style.maxHeight) {
-      //this is if the accordion is open
-      content.style.maxHeight = null;
-    } else {
-      //if the accordion is currently closed
-      content.style.maxHeight = content.scrollHeight + "px";
-      console.log(content.style.maxHeight);
-    }
-  };
-});
+vermais.addEventListener('click', e => {
+  const accordionVerMais = document.querySelector('[data-verMais="1"]')
+  accordionVerMais.classList.toggle('inactive')
+})
+
+const criarNovo = document.querySelector('[data-criar="1"]')
+
+criarNovo.addEventListener('click', e => {
+  const accordionCriarNovo = document.querySelector('[data-novo="1"]')
+  accordionCriarNovo.classList.toggle('active')
+})
+criarNovo.addEventListener('click', e => {
+  const accordionCriarNovo = document.querySelector('[data-write="1"]')
+  accordionCriarNovo.classList.toggle('active')
+})
+criarNovo.addEventListener('click', e => {
+  const accordionCriarNovo = document.querySelector('[data-send-box="1"]')
+  accordionCriarNovo.classList.toggle('active')
+})
+criarNovo.addEventListener('click', e => {
+  const accordionCriarNovo = document.querySelector('[data-enviar="1"]')
+  accordionCriarNovo.classList.toggle('active')
+})
+criarNovo.addEventListener('click', e => {
+  const accordionCriarNovo = document.querySelector('[data-bold="1"]')
+  accordionCriarNovo.classList.toggle('active')
+})
+criarNovo.addEventListener('click', e => {
+  const accordionCriarNovo = document.querySelector('[data-italic="1"]')
+  accordionCriarNovo.classList.toggle('active')
+})

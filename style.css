@@ -196,27 +196,31 @@ article{
     margin: 20px 5px 5px 35px;
 }
 
-.content{
-    position: relative;
-}
-
 .resumo{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
+    text-align: left;
     line-height: 25px;
     border: 1px solid #ECECEC;
     border-radius: 3px 3px 0px 0px;
     margin: 30px 0px 0px 0px;
     padding: 10px 10px 10px 15px;
-    width: 1182px;
+    width: 1150px;
     background-color: #FDF1EB ;
+    color: #4E4E4E;
+}
+
+button h3.resumo{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 0;
+    margin: 0px 0px 0px -1px;
     color: #4E4E4E;
 }
 
 .letra{
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 23px;
     color: #5C5C5C;
@@ -229,7 +233,7 @@ article{
     border-radius: 0px 0px 3px 3px;
     margin: 0;
     padding: 15px 15px 0px 15px;
-    width: 1177px;
+    width: 1155px;
     max-height: 114px;
     cursor: pointer;
     display: block; 
@@ -242,31 +246,62 @@ article{
     min-height: fit-content;
 }
 
-.resumee summary{
-    content: "ver mais";
+.resumee{
     display: flex;
-    color: #EE7A3A;
-    cursor: pointer;
-    font-weight: 500;
-    justify-content: flex-start;
+    color: #5C5C5C;
+    font-size: 14px;
+    font-weight: 400;
     align-items: center;
 }
 
-details .vermais::after{
-    margin: 2px 0px 26px 830px;
-    position: absolute;
-    content: "ver mais";
+.resumee.letra{
+    border: 0;
+    margin-bottom: 9px;
 }
 
-details[open] summary::after{
-    content: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 2px 0px 26px 830px;
+.accordion.detail.letra{
     padding: 0;
-    width: 20px;
-    text-align: center;
+    margin: 0;
+}
+
+.vermais{
+    position: absolute;
+    width: 90px;
+    margin: -27px 0px 0px 868px;
+    transition: all 0.4s ease;
+    font-weight: 550;
+    color: #EE7A3A;
+}
+
+.vermais.inactive{
+    font-size: 14px;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.accordion-header{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    cursor: pointer;
+    border:0;
+}
+
+.accordion-body {
+    font-size: 14px;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  
+.accordion-body.active {
+    font-weight: 400;
+    max-height: 18rem;
+    padding-bottom: 15px;
+    text-align: justify;
 }
 
 .question-panel{
@@ -303,29 +338,44 @@ details[open] summary::after{
 }
 
 .criar{
-    margin: 20px 0px;
-}
-
-.criar summary::before{
-    content:"+ criar tópico";
     cursor: pointer;
-    background: linear-gradient(180deg, #FFB345 0%, #EE7A3A 100%);
-    border-radius: 4px;
-    text-align: center;
-    height: 20px;
-    width: 124px;
-    padding: 6px 12px 12px 12px;
-    line-height: 20px;
-    margin: 0px 0px 12px 518px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 20px 0px 0px 550px;
+    padding: 7px 13px 9px;
     color: white;
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border: 0;
+    border-radius: 4px;
 }
 
-.criar[open] summary{
-    content-visibility: hidden;
+.novo-topico{
+    border: 0;
+    font-size: 14px;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.panel.active{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.novo-topico.active{
+    min-height: 18rem;
+    transition: all 0.4s ease;
 }
 
 .assunto{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
     margin: 22px 0px 1px 18px;
 }
 
@@ -333,7 +383,7 @@ details[open] summary::after{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #dfdfdf;
     border-radius: 3px;
     padding: 10px 0px 11px 23.3px;
     margin: 0px 14.95px 0px 18px;
@@ -341,33 +391,37 @@ details[open] summary::after{
 }
 
 .text-box{
-    height: 82px;
+    min-height: 82px;
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 0 0;
     margin: 3px 14.95px 0px 18px;
 }
 
-.send-box{
-    height: 31px;
+.active.send-box{
+    position: absolute;
+    overflow: hidden;
+    min-height: 31px;
+    width: 1140px;
     border: 1px solid #CCCCCC;
     border-radius: 0px 0px 3px 3px;
     background-color: #EAF1F2;
-    margin: 0px 14.95px 0px 18px;
+    margin: 0px 0px 0px 18px;
 }
 
-.bold-shape{
+.bold-shape.active{
     margin: 11px 30px 10px 30px;
 }
 
-.italic-shape{
+.italic-shape.active{
     margin: 11px 0px 10px 0px;
 }
 
-.enviar{
-    float: right;
+.enviar.active{
+    position: absolute;
     cursor: pointer;
-    height: 31px;
+    height: 34px;
     width: 205.1px;
+    margin: 0px 0px 0px 841px;
     border: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
@@ -378,7 +432,7 @@ details[open] summary::after{
 
 .divisoria{
     display: flex;
-    margin: 15px;
+    margin: 67px 15px 0px 15px;
     width: 1177px;
 }
 
@@ -388,7 +442,7 @@ details[open] summary::after{
     box-sizing: border-box;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    margin: 30px 15px;
+    margin: 3% 1%;
 }
 
 .card-header{
@@ -465,5 +519,5 @@ details[open] summary::after{
 
 .footer{
     position: absolute;
-    margin: 50px 100px 0px 0px;
+    margin: 50px 50px 0px 0px;
 }

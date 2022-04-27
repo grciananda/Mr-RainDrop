@@ -62,36 +62,44 @@
 
     <article>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP
         <img class="video-player" width="783px" height="460px" src="video.png" alt="video-player" href="https://www.freepik.com/vectors/video-player">
-            <h3 class="resumo">Resumo</h3>
-            <div class="resumee">
-            <p class="lorem letra">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.</p>
-            <details class="detail letra"><summary class="vermais"></summary>Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.<br>
+
+        <div data-js="accordion" class="accordion detail letra">
+            <div class="accordion-item">
+        <button data-accordion-header="1" class="accordion-header">
+            <h3 data-accordion-header="1" class="resumo">Resumo</h3>
+            <p data-accordion-header="1" class="resumee lorem letra">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.</p>
+                <div data-accordion-header="1" data-verMais="1" class="vermais">ver mais</div>
+                <div data-accordion-body="1" class="accordion-body resumee letra"><br>Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.<br>
             <br>
             Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.<br>
             <br>       
             Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </details>
+        </div>
+            </button>
             </div>
+            </div>
+        
             <h3 class="resumo">Discussões</h3>
             <div class="question-panel">
+                <div data-novo="1" class="panel">
                 <p class="discussoes">Compartilhe suas ideias ou dúvidas com os autores!</p>
                 <div class="icons">
                     <img class="icone1" src="icone1.png" alt="icone 1">
                     <img class="icone2" src="icone2.png" alt="icone 1">
                     <img class="icone3" src="icone3.png" alt="icone 1">
                 </div>
-
                 <p class="deixe">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-                <details class="criar">
-                    <summary></summary>
+                <button data-criar="1" class="criar">+ criar tópico</button>
+                </div>
+                <div data-write="1" class="novo-topico">
                     <p class="deixe">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                     <h5 class="assunto">Assunto</h5>
                     <p class="defina">Defina um tópico sucinto para notificar os autores...</p>
                     <h5 class="assunto conteudo">Conteúdo</h5>
                     <div class="text-box"></div>
-                    <div class="send-box"><img class="bold-shape" src="Shape.png" alt="bold shape"> <img class="italic-shape" src="Shape (1).png" alt="italic shape"><button class="enviar">Enviar</button>
+                    <div data-send-box="1" class="send-box"><img data-bold="1" class="bold-shape" src="Shape.png" alt="bold shape"> <img data-italic="1" class="italic-shape" src="Shape (1).png" alt="italic shape"><button data-enviar="1" data-sent="1" class="enviar">Enviar</button>
                     </div>
-                </details>
+                </div>
                 <img class="divisoria" src="divisória.png" alt="divisoria">
                 <div class="topico">
                     <p class="card-header">Assunto da pergunta aparece aqui</p>
@@ -120,5 +128,6 @@
             </div>
         <img class="footer" width="1235px" src="imagem - footer.png" alt="footer">
     </article>
+    <script src="script.js"></script>
 </body>
 </html>
