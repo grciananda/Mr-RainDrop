@@ -205,7 +205,7 @@ article{
     border-radius: 3px 3px 0px 0px;
     margin: 30px 0px 0px 0px;
     padding: 10px 10px 10px 15px;
-    width: 1150px;
+    width: 1182px;
     background-color: #FDF1EB ;
     color: #4E4E4E;
 }
@@ -327,6 +327,34 @@ button h3.resumo{
     margin: 15px 20px;
 }
 
+.foi-enviado.done{
+    position: absolute;
+    width: 100%;
+    margin: 15px 0px 0px 440px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.agradecemos.done{
+    position: absolute;
+    width: 100%;
+    margin: 55px 0px 0px 250px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #595959;
+}
+
+.descubra.done{
+    position: absolute;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 104px 0px 0px -156px;
+    color: #F48F44;
+}
+
 .deixe{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
@@ -369,7 +397,74 @@ button h3.resumo{
 }
 
 .novo-topico.active{
-    min-height: 18rem;
+    min-height: 290px;
+    transition: all 0.4s ease;
+}
+
+.deixe.done{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.assunto.done{
+    position: absolute;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.defina.done{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.text-box.done{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.send-box.active.done{
+    border: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.bold-shape.done{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.italic-shape.done{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.enviar.done{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
     transition: all 0.4s ease;
 }
 
@@ -432,17 +527,63 @@ button h3.resumo{
 
 .divisoria{
     display: flex;
-    margin: 67px 15px 0px 15px;
+    margin: 15px;
     width: 1177px;
 }
 
-.topico{
-    height: 162px;
+.rectangle{
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.rectangle.done{
+    position: absolute;
+    opacity: 90%;
+    transition: all 0.4s ease;
+}
+
+.done-icon.done{
+    position: absolute;
+    margin: 25px 590px;
+    transition: all 0.4s ease;
+}
+
+.made.done{
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 414.29px;
+    margin: 50px 0 0 480px;
+    color: #707070;
+    transition: all 0.4s ease;
+}
+
+.editar.done{
+    position: absolute;
+    font-weight: 400;
+    width: 122.12px;
+    text-decoration: underline;
+    margin: 85px 0px 0px 561px;
+    transition: all 0.4s ease;
+}
+
+.sent-topic{
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.sent-topic.done{
+    min-height: 162px;
     border: 1px solid #E7E7E7;
     box-sizing: border-box;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    margin: 3% 1%;
+    margin: 217px 0px 0px 15px;
+    transition: all 0.4s ease;
 }
 
 .card-header{
@@ -450,6 +591,7 @@ button h3.resumo{
     font-weight: 700;
     font-size: 16px;
     margin: 17px 0px 3px 24.17px;
+    transition: all 0.4s ease;
 }
 
 .name{
@@ -513,8 +655,17 @@ button h3.resumo{
     color: #757575;
 }
 
+.topico{
+    height: 165px;
+    margin: 30px 15px;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
 .arruma{
-    margin-bottom: 15px;
+    margin-top: 17px;
 }
 
 .footer{
