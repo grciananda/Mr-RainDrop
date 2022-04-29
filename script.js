@@ -201,3 +201,25 @@ criarNovoTopico.addEventListener('click', e=>{
   const accordionNovoTopico = document.querySelector('[data-criar-novo="1"]')
   accordionNovoTopico.classList.toggle('done');
 })
+
+const resposta = document.querySelector('[data-arruma="1"]')
+
+resposta.addEventListener('click', e=>{
+  const accordionResposta = document.querySelector('[data-arruma="1"]')
+  accordionResposta.classList.toggle('inactive');
+})
+resposta.addEventListener('click', e=>{
+  const accordionResposta = document.querySelector('[data-resposta="1"]')
+  accordionResposta.classList.toggle('active');
+})
+
+const respostaNew = document.querySelector('[data-resposta="1"]')
+
+respostaNew.addEventListener('click', e=>{
+  const accordionRespostaNew = document.querySelector('[data-resposta="1"]')
+  accordionRespostaNew.classList.toggle('active')
+})
+respostaNew.addEventListener('click', e=>{
+  const accordionRespostaNew = document.querySelector('[data-arruma="1"]')
+  accordionRespostaNew.classList.toggle('inactive')
+})

@@ -103,6 +103,36 @@ body{
     cursor: pointer;
 }
 
+.email{
+    position: absolute;
+    margin: 22px 0px 0px 1113px;
+}
+
+.alguem{
+    position: absolute;
+    font-size: 12px;
+    margin: 38px 0px 0px 1025px;
+}
+
+.email-pic{
+    position: absolute;
+    border-radius: 50%;
+    margin: 24px 0px 0px 1185px;
+}
+
+.dois{
+    position: absolute;
+    padding: 5px;
+    margin: 23px 0px 0px 1206px;
+    height: 4px;
+    width: 4px;
+    align-items: center;
+    line-height: 3px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
 .scroller {
     height: fit-content;
     overflow-y: scroll;
@@ -448,6 +478,12 @@ button h3.resumo{
     transition: all 0.4s ease;
 }
 
+div.novo-topico.active.done{
+    position: absolute;
+    max-height: 0;
+    padding: 0;
+}
+
 .deixe.done{
     border: 0;
     margin: 0;
@@ -713,7 +749,36 @@ button h3.resumo{
 }
 
 .arruma{
+    cursor: pointer;
     margin-top: 17px;
+}
+
+.topico.arruma.inactive{
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.topico.arruma.resposta{
+    display: none;
+}
+
+.topico.arruma.resposta.active{
+    position: relative;
+    display: block;
+    height: 165px;
+    margin: 30px 15px;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: #ED7839;
+}
+
+.new{
+    position: absolute;
 }
 
 .footer{
