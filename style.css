@@ -327,16 +327,32 @@ button h3.resumo{
     margin: 15px 20px;
 }
 
+.foi-enviado{
+    margin: 0;
+    padding: 0;
+    border:0;
+    display: none;
+}
+
 .foi-enviado.done{
     position: absolute;
+    display: flex;
     width: 100%;
     margin: 15px 0px 0px 440px;
     font-weight: 700;
     font-size: 18px;
 }
 
+.agradecemos{
+    margin: 0;
+    padding: 0;
+    border:0;
+    display: none;
+}
+
 .agradecemos.done{
     position: absolute;
+    display: flex;
     width: 100%;
     margin: 55px 0px 0px 250px;
     font-weight: 400;
@@ -344,15 +360,46 @@ button h3.resumo{
     color: #595959;
 }
 
+.descubra{
+    margin: 0;
+    padding: 0;
+    border:0;
+    display: none;
+}
+
 .descubra.done{
     position: absolute;
+    display: flex;
     width: 100%;
     font-weight: 400;
     font-size: 14px;
     text-align: center;
     text-decoration: underline;
-    margin: 104px 0px 0px -156px;
+    margin: 104px 0px 0px 520px;
     color: #F48F44;
+}
+
+.criar-novo{
+    margin: 0;
+    padding: 0;
+    border:0;
+    display: none;
+}
+
+.criar-novo.done{
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    width: 235.15px;
+    height: 32px;
+    padding-left: 65px;
+    margin: 155px 0px 0px 486px;
+    align-items: center;
+    color: white;
+    background:  linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
 }
 
 .deixe{
@@ -539,6 +586,7 @@ button h3.resumo{
 .rectangle.done{
     position: absolute;
     opacity: 90%;
+    width: 1176px;
     transition: all 0.4s ease;
 }
 
@@ -582,7 +630,7 @@ button h3.resumo{
     box-sizing: border-box;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    margin: 217px 0px 0px 15px;
+    margin: 218px 15px 0px 15px;
     transition: all 0.4s ease;
 }
 
