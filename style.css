@@ -52,7 +52,7 @@ body{
 .slaca{
     position: absolute;
     box-shadow: 1px 0px 5px rgb(211, 205, 205);
-    min-height: 2508px;
+    min-height: 2539px;
     width: 222px;
 }
 
@@ -272,7 +272,7 @@ button h3.resumo{
 .detail{
     padding: 0px 15px 15px 15px;
     border-top: 0;
-    width: 1177px;
+    width: 1207.8px;
     min-height: fit-content;
 }
 
